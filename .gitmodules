@@ -1,6 +1,0 @@
-[submodule "modules/site-generator"]
-	path = modules/site-generator
-	url = https://github.com/imlinus/site-generator.git
-[submodule "modules/static-server"]
-	path = modules/static-server
-	url = https://github.com/imlinus/static-server.git
