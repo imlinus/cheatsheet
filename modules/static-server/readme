@@ -1,0 +1,27 @@
+█▀ ▀█▀ ▄▀█ ▀█▀ ▀ █▀    █▀ █▀█ █▀█ █ █ █▀█ █▀█
+▄█  █  █▀█  █  █ █▄ ▀▀ ▄█ █▄▄ █▀▄ ▀▄▀ █▄▄ █▀▄
+________________________________________________________________________
+
+Simple static content server (HTML, CSS, JS + images)
+
+See https://github.com/imlinus/personal for an example in action
+
+
+Install
+________________________________________________________________________
+
+mkdir modules
+cd modules
+git submodule add https://github.com/imlinus/static-server.git
+
+
+Usage
+________________________________________________________________________
+
+import server from './modules/static-server/source/index.js'
+
+server({
+  src: '/build',
+  port: 1337,
+  main: 'index.html'
+})

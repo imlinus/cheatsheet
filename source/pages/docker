@@ -1,0 +1,22 @@
+---
+title: Docker
+logotype: █▀▄ █▀█ █▀ █▄▀ █▀█ █▀█!█▄█ █▄█ █▄ █ █ █▄▄ █
+---
+
+# Start all containers, rebuild if necessary
+docker-compose up --build
+
+# Stop all containers
+docker-compose down
+
+# To "shell" into a running container
+docker exec -it <name> sh
+
+# To remove all stopped containers
+docker rm $(docker ps -qa)
+
+# To remove all stopped containers, networks, images, & volumes
+docker system prune -a
+
+# Stop and remove all containers, networks, images, & volumes
+docker-compose down --rmi all --volumes

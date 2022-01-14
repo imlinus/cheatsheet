@@ -1,0 +1,13 @@
+---
+title: Zip
+logotype: ▀█ ▀ █▀█!█▄ █ █▀▀ 
+---
+
+# Zip a file
+zip name.zip file1 optional-output-directory/
+
+# Zip a directory
+zip -r name.zip directory/
+
+# Zip with password
+zip -P password name.zip file1

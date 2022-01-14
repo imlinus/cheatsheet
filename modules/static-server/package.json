@@ -1,0 +1,5 @@
+{
+  "main": "source/index.js",
+  "type": "module",
+  "license": "0BSD"
+}
