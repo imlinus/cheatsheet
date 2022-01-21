@@ -1,0 +1,34 @@
+---
+title: Bluetooth
+logotype:
+---
+
+# List bluetooth devices (on machine)
+lsmod | grep btusb
+
+# Start bluetooth daemon
+sudo systemctl start bluetooth.service
+
+# Enable bluetooth daemon (to auto-start on boot)
+sudo systemctl enable bluetooth.service
+
+# Enter the bluetoothctl shell
+bluetoothctl
+
+# Start bluetooth (inside bluetoothctl shell)
+power on
+agent on
+default-agent
+
+# Scan for devices (inside bluetoothctl shell)
+scan on
+
+# List devices (inside bluetoothctl shell)
+devices
+
+# Pair with device (inside bluetoothctl shell)
+trust MAC:ADDRESS
+pair MAC:ADDRESS
+
+# Connect with device (inside bluetoothctl shell)
+connect MAC:ADDRESS
