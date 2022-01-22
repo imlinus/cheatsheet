@@ -1,0 +1,17 @@
+Enable port forwarding for the Mikrotik router
+
+Click "IP" > "Firewall" > "NAT" > "Add New" 
+
+1 Chain: dstnat
+2 Protocol: tcp
+3 Dst. Port: 80
+4 In. Interface: ether1-gateway (one of an interface on the router)
+
+5 Scroll page down to "Action" field
+6 Action : dst-nat
+7 To Addresses: 192.168.88.253 (IP address of the computer cFos Personal Net is running on)
+8 To Ports: 80
+
+9 Scroll back on top of the page and check if the rule enabled (by default it is Enabled)
+10 Click "Apply"
+11 Click "OK" and then logoff from the router
